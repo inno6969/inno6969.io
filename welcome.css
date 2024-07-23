@@ -1,0 +1,58 @@
+*
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
+
+ .welcome-container {
+    background-image: url("picture/Beauty.png");
+        background-size: cover;
+        background-position: center;
+     background-color: #333;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 300px;
+     text-align: center;
+     color: #fff;
+ }
+
+ .welcome-container h2 {
+     margin-bottom: 20px;
+ }
+
+ .welcome-container p {
+     margin: 10px 0;
+ }
+
+ .button-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     margin-top: 20px;
+ }
+
+ .button-container a,
+ .button-container button {
+     width: 100%;
+     padding: 10px;
+     background-color: #d0bcda;
+     border: none;
+     border-radius: 5px;
+     color: #fff;
+     font-size: 16px;
+     cursor: pointer;
+     text-decoration: none;
+     text-align: center;
+ }
+
+ .button-container button:hover,
+ .button-container a:hover {
+     background-color: #45a049;
+ }

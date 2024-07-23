@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at Blissful Beauty Salon</title>
+    <link rel="stylesheet" href="careers.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Careers at Blissful Beauty Salon</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Log out</a></li>
+                <li><a href="services.html">Home</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="giftcard.html">Gift Cards</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="careers">
+        <h2>Join Our Team</h2>
+        <p>We are always looking for talented and passionate individuals to join our team. If you are interested in a
+            career at Blissful Beauty Salon, please fill out the form below and upload your resume. We look forward to
+            reviewing your application!</p>
+        <form action="submit_application.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Position Applied For</label>
+                <select id="position" name="position" required>
+                    <option value="">Select a position</option>
+                    <option value="stylist">Stylist</option>
+                    <option value="colorist">Colorist</option>
+                    <option value="manicurist">Manicurist</option>
+                    <option value="Cleaner">Cleaner</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" rows="4" placeholder="Optional"></textarea>
+            </div>
+            <button type="submit" class="submit-button" onclick="window.location.href='services.html'">Submit Application</button>
+        </form>
+        
+    </section>
+
+    
+</body>
+<footer>
+        <p>&copy; 2024 Blissful Beauty Salon. All rights reserved.</p>
+    </footer>
+</html>

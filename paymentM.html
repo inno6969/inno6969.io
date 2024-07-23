@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method - Blissful Beauty Salon</title>
+    <link rel="stylesheet" href="paymentM.css">
+</head>
+
+<body>
+    <div class="payment-container">
+        <h2>Select Payment Method</h2>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card_number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry_date" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv" required>
+            </div>
+            <button type="submit" class="submit-button">Pay Now</button>
+        </form>
+        <br>
+        <button class="back-button" onclick="window.location.href='services.html'">Back </button>
+        <div class="message" id="success-message">
+            Payment successful! 
+            You will receive a confirmation email shortly.
+        </div>
+    </div>
+
+<script src="paymentt.js"></script>
+</body>
+
+</html>

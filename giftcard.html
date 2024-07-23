@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send a Gift Card - Blissful Beauty Salon</title>
+    <link rel="stylesheet" href="giftcard.css">
+</head>
+
+<body>
+    <header>
+        <h1>Send a Gift Card</h1>
+        <nav>
+            <ul>
+                <li><a href="services.html">Home</a></li>
+                <li><a href="servicesoffred.html">Services</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="giftcard-container">
+        <h2>Send a Gift Card</h2>
+        <form action="submit_giftcard.php" method="post">
+            <div class="form-group">
+                <label for="amount">Gift Card Amount</label>
+                <select id="amount" name="amount" required>
+                    <option value="">Select an amount</option>
+                    <option value="25">R25</option>
+                    <option value="50">R50</option>
+                    <option value="75">R75</option>
+                    <option value="100">R100</option>
+                    <option value="150">R150</option>
+                    <option value="200">R200</option>
+                    <option value="250">R250</option>
+                    <option value="300">R300</option>
+                    <option value="350">R350</option>
+                    <option value="400">R400</option>
+                    <option value="450">R450</option>
+                    <option value="500">R500</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="recipient-name">Recipient Name</label>
+                <input type="text" id="recipient-name" name="recipient-name" required>
+            </div>
+            <div class="form-group">
+                <label for="recipient-email">Recipient Email</label>
+                <input type="email" id="recipient-email" name="recipient-email" required>
+            </div>
+            <div class="form-group">
+                <label for="recipient-phone">Recipient Phone Number</label>
+                <input type="tel" id="recipient-phone" name="recipient-phone" required>
+            </div>
+            <div class="form-group">
+                <label for="sender-name">Your Name</label>
+                <input type="text" id="sender-name" name="sender-name" required>
+            </div>
+            <div class="form-group">
+                <label for="sender-email">Your Email</label>
+                <input type="email" id="sender-email" name="sender-email" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery-method">Delivery Method</label>
+                <select id="delivery-method" name="delivery-method" required>
+                    <option value="">Select a method</option>
+                    <option value="email">Email</option>
+                    <option value="sms">SMS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="delivery-date">Delivery Date</label>
+                <input type="date" id="delivery-date" name="delivery-date" required>
+            </div>
+            <button type="submit" class="submit-button">Send Gift Card</button>
+        </form>
+        <button class="back-button" onclick="window.location.href='servicesoffred.html'">Services</button>
+    </div>
+</body>
+<script src="gitfcard.js"></script>
+</html>

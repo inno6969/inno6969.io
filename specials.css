@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.specials-container {
+    background-image: url('picture/loyalty card .png');
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.specials-container h2 {
+    color: #2d4125;
+    margin-bottom: 20px;
+}
+
+.specials-container p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.download-button {
+    background-color: #38123d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #d0bcda;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.back-button {
+    background-color: #38123d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
